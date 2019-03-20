@@ -198,7 +198,7 @@
 }
 
 .portfolio-cards {
-  width: 370px;
+  /* width: 370px */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,10 +207,114 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: auto;
+}
+
+.portfolio-cards__card {
+  margin-bottom: 30px;
 }
 
 .portfolio-cards__card__text {
   display: block;
+  width: 370px;
+}
+
+.portfolio-cards__card__title {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 13px;
+  margin-bottom: 24px;
+}
+
+.portfolio__img {
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 35px;
+}
+
+.portfolio-title {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 101px;
+  margin-bottom: 70px;
+  border-bottom: 2px solid #23bac1;
+}
+
+.portfolio-subtitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 79px;
+}
+
+.card {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.card-list {
+  padding-left: 0;
+}
+
+.card-list__item {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 35px;
+  /* border-bottom: 2px solid #23bac1 */
+  position: relative;
+}
+
+.card-list__item:after {
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+  width: 9px;
+  border-bottom: 2px solid #23bac1;
+  content: "";
+  text-align: center;
+}
+
+.card-list:last-child {
+  border-style: none;
+}
+
+.card {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .card__img::before {
+  opacity: 1;
+}
+
+.button__portfolio {
+  padding: 23px 26px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.38px;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #23bac1;
+}
+
+.button__portfolio:hover {
+  background-color: #23bac1;
+  color: #fff;
+  border: 1px solid #23bac1;
+  cursor: pointer;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

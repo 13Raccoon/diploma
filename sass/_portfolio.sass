@@ -3,12 +3,88 @@
 
 .portfolio
   &-cards
-    width: 370px
+    /* width: 370px */
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    margin: auto
     &__card
+      margin-bottom: 30px
       &__text
         display: block
+        width: 370px
         
+      &__title
+        font-size: 20px
+        font-weight: 400
+        text-align: center
+        padding-top: 13px
+        margin-bottom: 24px
+  &__img
+    padding-left: 35px
+    padding-right: 35px
+    margin-bottom: 35px
+      
+  &-title
+    font-size: 36px
+    font-weight: 400
+    text-align: center
+    margin-top: 101px
+    margin-bottom: 70px
+    border-bottom: 2px solid #23bac1
+  &-subtitle
+    display: block
+    font-size: 20px
+    font-weight: 300
+    text-align: center
+    margin-bottom: 79px
+.card
+  text-align: center
+  padding-bottom: 40px
+  &-list
+    padding-left: 0
+    &__item
+      list-style: none
+      font-size: 16px
+      font-weight: 300
+      line-height: 35px
+      /* border-bottom: 2px solid #23bac1 */
+      position: relative
+      &:after
+        position: absolute
+        bottom: 0
+        left: 49%
+        width: 9px
+        border-bottom: 2px solid #23bac1
+        content: ""
+        text-align: center
+    &:last-child
+      border-style: none
+      
+      
+
+.card
+  transition: 0.2s
+  &:hover
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+    .card__img::before
+      opacity: 1
+
+
+.button__portfolio
+  padding: 23px 26px
+  background-color:  #fff
+  color: #000
+  border: none
+  font-size: 15px
+  font-weight: 400
+  letter-spacing: 0.38px
+  text-transform: uppercase
+  transition: 0.2s
+  border: 1px solid #23bac1
+  &:hover
+    background-color: #23bac1
+    color: #fff
+    border: 1px solid #23bac1
+    cursor: pointer
         
