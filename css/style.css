@@ -216,7 +216,11 @@
 
 .portfolio-cards__card__text {
   display: block;
-  width: 370px;
+  width: 234px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  margin: auto;
 }
 
 .portfolio-cards__card__title {
@@ -238,8 +242,17 @@
   font-weight: 400;
   text-align: center;
   margin-top: 101px;
-  margin-bottom: 70px;
+  position: relative;
+}
+
+.portfolio-title:after {
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+  width: 31px;
   border-bottom: 2px solid #23bac1;
+  content: "";
+  text-align: center;
 }
 
 .portfolio-subtitle {
@@ -264,7 +277,6 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 35px;
-  /* border-bottom: 2px solid #23bac1 */
   position: relative;
 }
 
@@ -278,8 +290,8 @@
   text-align: center;
 }
 
-.card-list:last-child {
-  border-style: none;
+.card-list__item:last-child:after {
+  display: none;
 }
 
 .card {
@@ -294,6 +306,19 @@
 
 .card:hover .card__img::before {
   opacity: 1;
+}
+
+.list-buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .button__portfolio {
@@ -315,6 +340,22 @@
   color: #fff;
   border: 1px solid #23bac1;
   cursor: pointer;
+}
+
+.but-to {
+  margin-top: 35px;
+}
+
+.but-three {
+  margin-top: 6px;
+}
+
+.but-five {
+  margin-top: 49px;
+}
+
+.but-six {
+  margin-top: 168px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

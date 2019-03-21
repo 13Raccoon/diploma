@@ -12,7 +12,11 @@
       margin-bottom: 30px
       &__text
         display: block
-        width: 370px
+        width: 234px
+        font-size: 16px
+        font-weight: 300
+        line-height: 21px
+        margin: auto
         
       &__title
         font-size: 20px
@@ -30,14 +34,22 @@
     font-weight: 400
     text-align: center
     margin-top: 101px
-    margin-bottom: 70px
-    border-bottom: 2px solid #23bac1
+    position: relative
+    &:after
+      position: absolute
+      bottom: 0
+      left: 49%
+      width: 31px
+      border-bottom: 2px solid #23bac1
+      content: ""
+      text-align: center
   &-subtitle
     display: block
     font-size: 20px
     font-weight: 300
     text-align: center
     margin-bottom: 79px
+
 .card
   text-align: center
   padding-bottom: 40px
@@ -48,7 +60,6 @@
       font-size: 16px
       font-weight: 300
       line-height: 35px
-      /* border-bottom: 2px solid #23bac1 */
       position: relative
       &:after
         position: absolute
@@ -58,8 +69,9 @@
         border-bottom: 2px solid #23bac1
         content: ""
         text-align: center
-    &:last-child
-      border-style: none
+      &:last-child
+        &:after
+          display: none
       
       
 
@@ -69,6 +81,11 @@
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
     .card__img::before
       opacity: 1
+
+.list-buttom
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 
 
 .button__portfolio
@@ -82,9 +99,19 @@
   text-transform: uppercase
   transition: 0.2s
   border: 1px solid #23bac1
+
+  
   &:hover
     background-color: #23bac1
     color: #fff
     border: 1px solid #23bac1
     cursor: pointer
-        
+
+.but-to
+  margin-top: 35px
+.but-three
+  margin-top: 6px
+.but-five
+  margin-top: 49px
+.but-six
+  margin-top: 168px
