@@ -358,6 +358,16 @@
   margin-top: 168px;
 }
 
+.section-project {
+  background-color: #f6f6f6;
+}
+
+.project-example {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
