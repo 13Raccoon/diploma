@@ -133,6 +133,7 @@
 }
 
 .button {
+  outline: none;
   background-color: #23bac1;
   color: #fff;
   padding: 25px;
@@ -332,7 +333,7 @@
   text-transform: uppercase;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  border: 1px solid #23bac1;
+  border: none;
 }
 
 .button__portfolio:hover {
@@ -360,12 +361,116 @@
 
 .section-project {
   background-color: #f6f6f6;
+  padding-bottom: 100px;
 }
 
 .project-example {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.project-about__text {
+  margin-left: 83px;
+}
+
+.project-title {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 96px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.project-title:after {
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+  width: 31px;
+  border-bottom: 2px solid #23bac1;
+  content: "";
+  text-align: center;
+}
+
+.project-subtitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.project-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-about__title {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 43px;
+}
+
+.project-about__subtitleTop {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+
+.project-about__subtitleBottom {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+
+.project-about__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.scale, .size, .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 80px;
+}
+
+.button-price {
+  padding: 26px 48px;
+  background-color: #23bac1;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.38px;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: none;
+}
+
+.button-price:hover {
+  background-color: #fff;
+  color: #23bac1;
+  border: 1px solid #23bac1;
+  cursor: pointer;
+}
+
+.scale-text, .size-text, .date-text {
+  margin-bottom: 18px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -731,7 +836,7 @@ body {
   margin: auto;
 }
 
-.container-portfolio {
+.container-portfolio, .container-project {
   width: 1170px;
   margin: auto;
 }
