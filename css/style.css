@@ -199,7 +199,6 @@
 }
 
 .portfolio-cards {
-  /* width: 370px */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,11 +351,11 @@
 }
 
 .but-five {
-  margin-top: 49px;
+  margin-top: 51px;
 }
 
 .but-six {
-  margin-top: 168px;
+  margin-top: 170px;
 }
 
 .section-project {
