@@ -574,7 +574,69 @@
   margin-bottom: 177px;
 }
 
-@impotr 'map' {}/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@impotr 'map' {}.section-footer {
+  background-color: #000;
+}
+
+.container-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 58px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__text {
+  width: 200px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.footer__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.footer__title {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #22bac1;
+  text-decoration: underline;
+}
+
+.addres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__img {
+  width: 14px;
+  height: 18px;
+  margin-right: 19px;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -937,7 +999,7 @@ body {
   margin: auto;
 }
 
-.container-portfolio, .container-project, .container-advantages, .container-customers {
+.container-portfolio, .container-project, .container-advantages, .container-customers, .container-footer {
   width: 1170px;
   margin: auto;
 }
