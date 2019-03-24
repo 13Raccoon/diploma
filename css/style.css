@@ -620,6 +620,12 @@
   margin-bottom: 177px;
 }
 
+/* .style
+  max-width: 170px !important */
+.customers-slider {
+  max-width: 50% !important;
+}
+
 @impotr 'map' {}.section-footer {
   background-color: #000;
 }

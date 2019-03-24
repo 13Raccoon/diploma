@@ -216,8 +216,8 @@
         </div>
         <div class="all">
             <div class="arrows portfolio__arrows">
-                <div class="arrow__left"><img src="img/left.png" alt="" class="slick-prev"></div>
-              </div>
+              <div class="arrow__left"><img src="img/left.png" alt="" class="slick-prev"></div>
+            </div>
               <div class="slider single-item">
                 <div class="project-example">
                   <div class="project-img">
@@ -309,7 +309,6 @@
              
           </div>
           <div class="arrows portfolio__arrows">
-            
             <div class="arrow__right"><img src="img/right.png" alt=""  class="slick-next"></div>
           </div>
         </div>
@@ -368,12 +367,20 @@
   <section class="section-customers">
     <div class="container-customers">
       <h2 class="customers__text">Наши клиенты</h2>
-      <div class="customers-slider">
-        <img src="img/GPB.jpg" alt="" class="customers-slider__img">
-        <img src="img/Moсkow.jpg" alt="" class="customers-slider__img">
-        <img src="img/VTB.jpg" alt="" class="customers-slider__img">
-        <img src="img/AB.jpg" alt="" class="customers-slider__img">
-        <img src="img/VAZ.jpg" alt="" class="customers-slider__img">
+      <div class="all">
+          <div class="arrows-2 portfolio__arrows">
+              <div class="arrow__left-2"><img src="img/left.png" alt="" class="slick-prev"></div>
+          </div>
+          <div class="customers-slider multiple-items">
+              <img src="img/GPB.jpg" alt="" class="customers-slider__img">
+              <img src="img/Moсkow.jpg" alt="" class="customers-slider__img">
+              <img src="img/VTB.jpg" alt="" class="customers-slider__img">
+              <img src="img/AB.jpg" alt="" class="customers-slider__img">
+              <img src="img/VAZ.jpg" alt="" class="customers-slider__img">
+            </div>
+            <div class="arrows-2 portfolio__arrows">
+                <div class="arrow__right-2"><img src="img/right.png" alt=""  class="slick-next"></div>
+            </div>
       </div>
     </div>
   </section>
@@ -412,6 +419,13 @@
       $('.single-item').slick({
         prevArrow: $('.arrow__left'),
         nextArrow: $('.arrow__right')
+        });
+        $('.multiple-items').slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          prevArrow: $('.arrow__left-2'),
+          nextArrow: $('.arrow__right-2')
         });
     });
   </script>
