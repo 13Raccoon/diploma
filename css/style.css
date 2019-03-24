@@ -1,3 +1,20 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
 .navbar-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,8 +45,10 @@
 .menu-item__link {
   text-decoration: none;
   font-size: 14px;
-  font-weight: 400;
   color: #000;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-weight: 400;
+  font-display: auto;
   border-bottom: 1px solid #afafaf;
 }
 
@@ -41,6 +60,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-weight: 700;
+  font-display: auto;
 }
 
 .navbar__title {
@@ -74,7 +96,9 @@
   display: block;
   color: #fffafa;
   font-size: 48px;
+  font-family: 'ProximaNova-Regular', sans-serif;
   font-weight: 400;
+  font-display: auto;
   line-height: 60px;
   margin-bottom: 50px;
   padding-top: -10px;
@@ -101,6 +125,13 @@
   font-weight: 400;
   margin-bottom: 28px;
   margin-top: 40px;
+}
+
+.hero-bid__title::after {
+  content: "30 минут";
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-weight: 700;
+  font-display: auto;
 }
 
 .hero-form {
@@ -524,7 +555,6 @@
 
 .adv-title {
   color: #ffffff;
-  font-family: "Proxima Nova";
   font-size: 24px;
   font-weight: 400;
   line-height: 31px;
@@ -1037,7 +1067,7 @@ template {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: ProximaNova, sans-serif;
 }
 
 .navbar {

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  }
+
+@mixin black {
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-weight: 300;
+  font-display: auto;
+  }
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  }
+  
+@mixin reg {
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-weight: 400;
+  font-display: auto;
+  }
+
+@mixin bold {
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-weight: 700;
+  font-display: auto;
+  }

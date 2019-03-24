@@ -18,10 +18,11 @@
       display: block
       color: #fffafa
       font-size: 48px
-      font-weight: 400
+      +reg
       line-height: 60px
       margin-bottom: 50px
       padding-top: -10px
+      
     &__subtitle
       display: block
       color: #fffafa
@@ -40,6 +41,9 @@
       font-weight: 400
       margin-bottom: 28px
       margin-top: 40px
+      &::after
+        content: "30 минут"
+        +bold
   &-form
     margin-bottom: 43px
       
