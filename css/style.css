@@ -553,7 +553,28 @@
   padding-top: 8px;
 }
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+.customers__text {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.customers-slider {
+  width: 1168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 177px;
+}
+
+@impotr 'map' {}/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -916,7 +937,7 @@ body {
   margin: auto;
 }
 
-.container-portfolio, .container-project, .container-advantages {
+.container-portfolio, .container-project, .container-advantages, .container-customers {
   width: 1170px;
   margin: auto;
 }
