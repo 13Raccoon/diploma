@@ -14,8 +14,9 @@
   <nav class="navbar">
     <div class="container">
         <div class="navbar-block">
-          <div class="menu">
-            <ul class="menu-list">
+          <div class="menu-bur">
+            <button class="button-menu">Меню</button>
+            <ul class="menu-list-bur">
               <li class="menu-item"><a href="#" class="menu-item__link">Главная</a></li>
               <li class="menu-item"><a href="#" class="menu-item__link">Виды макетов</a></li>
               <li class="menu-item"><a href="#" class="menu-item__link">Комплектация макетов</a></li>
@@ -24,6 +25,16 @@
               <li class="menu-item"><a href="#" class="menu-item__link">Контакты</a></li>
             </ul>
           </div>
+          <div class="menu">
+              <ul class="menu-list">
+                <li class="menu-item"><a href="#" class="menu-item__link">Главная</a></li>
+                <li class="menu-item"><a href="#" class="menu-item__link">Виды макетов</a></li>
+                <li class="menu-item"><a href="#" class="menu-item__link">Комплектация макетов</a></li>
+                <li class="menu-item"><a href="#" class="menu-item__link">Реализованные проекты</a></li>
+                <li class="menu-item"><a href="#" class="menu-item__link">Наши клиенты</a></li>
+                <li class="menu-item"><a href="#" class="menu-item__link">Контакты</a></li>
+              </ul>
+            </div>
           <div class="navbar-phone">
               <span class="navbar__phone">8 800 891-33-33</span>
               <a href="#" class="navbar__title">Заказать обратный звонок</a>
@@ -427,6 +438,35 @@
           prevArrow: $('.arrow__left-2'),
           nextArrow: $('.arrow__right-2')
         });
+      $('#hero-bid__form').validate({
+        rules:{
+          username: {
+            required: true,
+            minlength: 2,  
+            maxlenght: 15          
+          },
+          phone: {
+            required: true
+            
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          username: {
+            required: "Введите имя",
+            minlength: jQuery.validator.format("Не менее {0} символов!"),
+            maxlength: jQuery.validator.format("Не более {0} символов!")
+          },
+          phone: "Введите телефон",
+          email: "Введите корректный email"
+        },
+        errorClass: "invalid",
+        errorElement: "div"
+      });
+    $('.phone').mask('+7 (999) 999-99-99');
     });
   </script>
   
