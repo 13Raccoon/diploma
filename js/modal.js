@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var button = $('#button');
+  var button = $('#ring');
   var modal = $('#modal');
   var close = $('#close');
 

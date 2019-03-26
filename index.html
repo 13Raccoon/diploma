@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  
   
   <title>Document</title>
 </head>
@@ -17,35 +19,44 @@
           <div class="menu-bur">
             <button class="button-menu">Меню</button>
             <ul class="menu-list-bur">
-              <li class="menu-item"><a href="#" class="menu-item__link">Главная</a></li>
-              <li class="menu-item"><a href="#" class="menu-item__link">Виды макетов</a></li>
-              <li class="menu-item"><a href="#" class="menu-item__link">Комплектация макетов</a></li>
-              <li class="menu-item"><a href="#" class="menu-item__link">Реализованные проекты</a></li>
-              <li class="menu-item"><a href="#" class="menu-item__link">Наши клиенты</a></li>
-              <li class="menu-item"><a href="#" class="menu-item__link">Контакты</a></li>
+              <li class="menu-item"><a href="#container-hero" class="menu-item__link">Главная</a></li>
+              <li class="menu-item"><a href="#container-portfolio" class="menu-item__link">Виды макетов</a></li>
+              <li class="menu-item"><a href="#container-advantages " class="menu-item__link">Комплектация макетов</a></li>
+              <li class="menu-item"><a href="#container-project" class="menu-item__link">Реализованные проекты</a></li>
+              <li class="menu-item"><a href="#container-customers" class="menu-item__link">Наши клиенты</a></li>
+              <li class="menu-item"><a href="#container-footer" class="menu-item__link">Контакты</a></li>
             </ul>
           </div>
           <div class="menu">
               <ul class="menu-list">
-                <li class="menu-item"><a href="#" class="menu-item__link">Главная</a></li>
-                <li class="menu-item"><a href="#" class="menu-item__link">Виды макетов</a></li>
-                <li class="menu-item"><a href="#" class="menu-item__link">Комплектация макетов</a></li>
-                <li class="menu-item"><a href="#" class="menu-item__link">Реализованные проекты</a></li>
-                <li class="menu-item"><a href="#" class="menu-item__link">Наши клиенты</a></li>
-                <li class="menu-item"><a href="#" class="menu-item__link">Контакты</a></li>
+                <li class="menu-item"><a href="#container-hero" class="menu-item__link">Главная</a></li>
+                <li class="menu-item"><a href="#container-portfolio" class="menu-item__link">Виды макетов</a></li>
+                <li class="menu-item"><a href="#container-advantages" class="menu-item__link">Комплектация макетов</a></li>
+                <li class="menu-item"><a href="#container-project" class="menu-item__link">Реализованные проекты</a></li>
+                <li class="menu-item"><a href="#container-customers" class="menu-item__link">Наши клиенты</a></li>
+                <li class="menu-item"><a href="#container-footer" class="menu-item__link">Контакты</a></li>
               </ul>
             </div>
           <div class="navbar-phone">
               <span class="navbar__phone">8 800 891-33-33</span>
-              <a href="#" class="navbar__title">Заказать обратный звонок</a>
+              <a href="#" class="navbar__title ring" onclick="ym(52778509, 'reachGoal', 'ring'); return true;" id="ring">Заказать обратный звонок</a>
           </div>
+          
         </div>
       </div>
   </nav>
 
+  <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <button class="modal-dialog-close button button__modal" id="close">&times;</button>
+        <h4 class="modal-dialog-title">Всплывающее окно</h4>
+      </div>
+      <!-- /.modal-dialog -->
+  </div>
+    <!-- /.modal -->
 
   <section class="section-hero">
-    <div class="container container-hero">
+    <div class="container container-hero" id="container-hero">
       <div class="hero">
         
         <div class="hero-about">
@@ -110,7 +121,7 @@
   </section>
 
   <section class="section-portfolio">
-    <div class="container container-portfolio">
+    <div class="container container-portfolio" id="container-portfolio">
       <h2 class="portfolio-title">Виды макетов</h2>
     <span class="portfolio-subtitle">Создаем макеты от небольших домов до космических станций</span>
     <div class="portfolio-cards">
@@ -220,7 +231,7 @@
   </section>
 
   <section class="section-project">
-    <div class="container container-project">
+    <div class="container container-project" id="container-project">
         <div class="project-top">
             <h2 class="project-title">Реализованные проекты</h2>
             <span class="project-subtitle">Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов</span>
@@ -327,7 +338,7 @@
   </section>
   
   <section class="section-advantages">
-    <div class="container container-advantages">
+    <div class="container container-advantages" id="container-advantages">
       <div class="advantages-title">
         <h2 class="adv-title">Все макеты, изготовленные нашей макетной мастерской, 
           помогли клиентам выполнить поставленные цели, а именно:</h2>
@@ -376,7 +387,7 @@
   </section>
 
   <section class="section-customers">
-    <div class="container-customers">
+    <div class="container-customers" id="container-customers">
       <h2 class="customers__text">Наши клиенты</h2>
       <div class="all">
           <div class="arrows-2 portfolio__arrows">
@@ -403,7 +414,7 @@
   </section>
 
   <footer class="section-footer">
-    <div class="container-footer">
+    <div class="container-footer" id="container-footer">
       <div class="addres">
         <img src="img/point.png" alt="" class="footer__img">
         <span class="footer__text">г. Москва,<br> Автомоторная улица, 4А, стр.21</span>

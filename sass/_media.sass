@@ -28,7 +28,26 @@
     margin: auto
   .scale, .size, .date
     margin-right: 20px
-  
+
+@media (max-width: 991px)
+  .button
+    outline: none
+    background-color: #23bac1
+    color: #fff
+    padding: 25px
+    border: none
+    font-size: 15px
+    font-weight: 400
+    letter-spacing: 0.38px
+    text-transform: uppercase
+    transition: 0.2s
+  .portfolio__img
+    filter: none
+  .button__portfolio
+    background-color: #23bac1
+    color: #fff
+    
+
 @media (max-width: 880px)
   .project-img
     width: 60%
@@ -105,11 +124,11 @@
     vertical-align: bottom
     display: inline-block
   
-.section-customers
-  display: none
-.customers__text
-  padding-top: 20px
-  margin-bottom: 50px
+  .section-customers
+    display: none
+  .customers__text
+    padding-top: 20px
+    margin-bottom: 50px
 
 
 @media (max-width: 645px)
