@@ -27,6 +27,9 @@
     padding-left: 35px
     padding-right: 35px
     margin-bottom: 35px
+    filter: sepia(150%)
+    &:hover
+      filter: none
       
   &-title
     font-size: 36px
@@ -77,9 +80,14 @@
 .card
   transition: 0.2s
   &:hover
+    img
+      filter: none
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
     .card__img::before
       opacity: 1
+  & img
+    &:hover
+      filter: none
 
 .list-buttom
   display: flex
