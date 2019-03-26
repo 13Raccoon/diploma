@@ -395,13 +395,13 @@
           filter: none;
 }
 
-.card:hover .card__img::before {
-  opacity: 1;
+.card:hover .button__portfolio {
+  background-color: #23bac1;
+  color: #fff;
 }
 
-.card img:hover {
-  -webkit-filter: none;
-          filter: none;
+.card:hover .card__img::before {
+  opacity: 1;
 }
 
 .list-buttom {
@@ -463,6 +463,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  outline: none;
 }
 
 .project-about__text {
@@ -570,6 +571,10 @@
 
 .arrow__left {
   display: inline-block;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  border: 1px solid #23bac1;
 }
 
 .slider {
